@@ -1,0 +1,115 @@
+GIT Command in command prompt
+
+GIT 1 and 2
+
+git --version 
+
+git config --global user.name coderzero8
+git config --global user.email coderzero8@gmail.com
+
+check 
+
+git config user.name
+
+
+
+STUDY
+
+GIT  3 
+
+
+ | Modified 
+
+	Changed file not commited
+
+ |Staging 
+
+ 	Add the changed file to staging that you want to commit
+
+ | Committed
+
+ 	any files in the staging area are added to the commit when we make one.
+
+
+
+
+GIT 4
+
+
+create file in cmd "type nul > hello.txt"
+
+\\ GIT commands
+
+
+git init 
+git status
+git rm --cached index.html
+git commit -m "added content in style.css"
+git add .
+git log 
+git log --oneline
+
+
+\\ Undoing things
+
+Checkout commit
+Revert commit
+Reset commit
+
+commands
+
+git checkout 4ede05d
+git checkout master 
+
+git revert 3a00416
+:wq event
+8bdc86b (HEAD -> master) Revert "add another code in style2.css"
+a83762e add title in index.html
+3a00416 add another code in style2.css
+4ede05d added content in style.css
+1dbd8a7 add new files index style and style2
+
+git reset 4ede05d
+
+git reset 4ede05d --hard
+
+
+\\create branching
+\\create branch
+git branch feature-1
+
+\\check branch
+git branch -a
+\\delete branch
+git branch -d feature-1
+
+C:\GITDEV~1\git-two (feature-b -> origin)
+λ git branch -d feature-1
+error: The branch 'feature-1' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D feature-1'.
+
+C:\GITDEV~1\git-two (feature-b -> origin)
+λ git branch -D feature-1
+Deleted branch feature-1 (was efe0b16).
+
+\\create new branch and checkout 
+git checkout -b feature-a
+
+git checkout -b feature-b
+
+\\merging branches.
+
+ git checkout master
+ git merge feature-a
+
+
+\\ fix conflict form commiting in master
+edit 
+
+git add. 
+git commit \\ dont add comments 
+
+and wq when editor show.
+
+Tutorial 10 GITHUB
+
